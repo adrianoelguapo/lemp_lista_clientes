@@ -87,6 +87,17 @@ header p{
     border-radius: 10px;
 }
 
+.card .name{
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.card .surnames{
+    font-size: 15px;
+    font-weight: bold;
+}
+
 /* --- Estilos para el botón de eliminar en la tarjeta --- */
 .delete-btn{
     width: 60%;

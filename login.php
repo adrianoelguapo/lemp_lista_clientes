@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: clientes.html");
         exit(); // Detener la ejecución para evitar que el código continúe
     } else {
-        echo "Usuario o contraseña incorrectos.";
+        header("Location: index.html");
     }
     $stmt->close();
 }

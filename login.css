@@ -1,0 +1,117 @@
+/* --- Importar fuentes --- */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Timmana&display=swap');
+
+/* --- Estilos generales --- */
+body{
+    font-family: "Timmana", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(126, 39, 208);
+}
+
+/* --- Estilos para el contenedor principal --- */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 2.5%;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+/* --- Estilos para los subcontenedores --- */
+.leftcontainer{
+    width: 50%;
+    height: 90vh;
+    border-radius: 10px;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+}
+
+.subleftcontainer{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightcontainer{
+    width: 50%;
+    height: 90vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightcontainer .logintitle{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.rightcontainer .loginform{
+    margin-top: -15%;
+    margin-bottom: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightcontainer .logintextbox{
+    border: none;
+    background-color: rgb(231, 228, 228);
+    border-radius: 5px;
+    padding: 5%;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    cursor: text;
+    transition: transform 0.2s;
+}
+
+.rightcontainer .loginbutton{
+    width: 60%;
+    margin-top: 10%;
+    align-self: center;
+    padding: 5%;
+    border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;    
+    text-transform: uppercase;
+}
+
+.rightcontainer .logintextbox:hover,
+.rightcontainer .loginbutton:hover{
+    transform: scale(1.1);
+}

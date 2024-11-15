@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Clientes - Adriano</title>
+    <link rel = "stylesheet" href = "clientes.css">
+
+</head>
+
+    <body>
+        
+        <header>
+
+            <p>Lista de Clientes</p>
+            <button id="addClientButton">Agregar Cliente</button>
+
+        </header>
+
+        <div class = "container">
+
+            <!--Aquí irán las cartas de los clientes-->
+
+        </div>
+
+        <div id = "addClientModal" class = "modal" style = "display:none;">
+
+            <div class = "modal-content">
+
+                <span id = "closeModal" class = "close">&times;</span>
+
+                <h2>Agregar Cliente</h2>
+
+                <form id = "addClientForm">
+
+                    <label for = "name">Nombre:</label>
+                    <input type = "text" id = "name" name = "name" required>
+        
+                    <label for = "surnames">Apellidos:</label>
+                    <input type = "text" id = "surnames" name = "surnames" required>
+        
+                    <label for = "company">Empresa:</label>
+                    <input type = "text" id = "company" name = "company" required>
+        
+                    <label for = "image_url">URL de Imagen:</label>
+                    <input type = "url" id = "image_url" name = "image_url" required>
+        
+                    <button type = "submit">Añadir Cliente</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div id = "editClientModal" class = "modal" style = "display:none;">
+
+            <div class = "modal-content">
+
+                <span id = "closeEditModal" class = "close">&times;</span>
+
+                <h2>Editar Cliente</h2>
+
+                <form id = "editClientForm">
+
+                    <input type = "hidden" id = "editId" name = "id">
+                    
+                    <label for = "editName">Nombre:</label>
+                    <input type = "text" id = "editName" name = "name" required>
+
+                    <label for = "editSurnames">Apellidos:</label>
+                    <input type = "text" id = "editSurnames" name = "surnames" required>
+
+                    <label for = "editCompany">Empresa:</label>
+                    <input type = "text" id = "editCompany" name = "company" required>
+
+                    <label for = "editImageUrl">URL de Imagen:</label>
+                    <input type = "url" id = "editImageUrl" name = "image_url" required>
+
+                    <button type = "submit">Guardar Cambios</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <footer>
+
+            <p>2024 Adriano ©</p>
+
+        </footer>
+
+        <script src = "clients.js"></script>
+
+    </body>
+
+</html>
